@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="main.js"> </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="searchBox" class="text-center">
+            <h1>Dictionary</h1><br>
+            <input class="form-control" placeholder="Add your word" id="userInput" onfocus=this.value='' autocomplete="on"/>
+            <button id = "addButton" class="btn btn-danger" onclick="addWords()">Add word</button><br>
+            <input class="form-control" placeholder="Search your word" onkeyup="showResults(value)">
+            <div id="result"></div>
+    </body>
+</html>
