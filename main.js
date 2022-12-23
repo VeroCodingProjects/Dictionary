@@ -1,8 +1,12 @@
 const words = []; //the list will contain the added words
 
 function addWords() {
-    let userInput = document.getElementById("userInput").value;
-    words.push(userInput);
+    let userInput = document.getElementById("user-input").value;
+    if (words.includes(userInput)) {
+        return 0;
+    } else {
+        words.push(userInput);
+    }
 }
 
 function searchInput(input) { // searching for all the words that start with the input
