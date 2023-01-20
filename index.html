@@ -9,9 +9,15 @@
     <body>
         <div id="searchBox" class="text-center">
             <h1>Dictionary</h1><br>
-            <input class="form-control" placeholder="Add your word" id="userInput" onfocus=this.value='' autocomplete="on"/>
-            <button id = "addButton" class="btn btn-danger" onclick="addWords()">Add word</button><br>
-            <input class="form-control" placeholder="Search your word" onkeyup="showResults(value)">
-            <div id="result"></div>
+            <form action="javascript:addWords(this)">
+                <input id="input" placeholder="Add your word" autocomplete="on"/>
+                <button id="button" class="btn btn-dark">Add word</button><br>
+                <h4 id="repetitive"></h4>
+                <h3>Search a word in the dictionary</h3>
+                <input placeholder="Search your word" onkeyup="showResults(value)">
+                <div id="result"></div>
+                <h5 id="dictionary">WORDS IN DICTIONARY: </h5>
+            </form>
+        </div>
     </body>
 </html>
