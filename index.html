@@ -9,9 +9,9 @@
     <body>
         <div id="searchBox" class="text-center">
             <h1>Dictionary</h1><br>
-            <form action="javascript:addWords()" >
-                <input id="user-input" type="text" required maxlength="52" minlength="1" class="form-control" placeholder="Add your word" onfocus=this.value=''/>
-                <input type="submit" class="btn btn-danger" value="Add word">
+            <form action="javascript:addWords(this)">
+                <input id="input"class="form-control" placeholder="Add your word" onfocus=this.value='' autocomplete="on"/>
+                <button id = "addButton" class="btn btn-danger">Add word</button><br>
                 <input class="form-control" placeholder="Search your word" onkeyup="showResults(value)">
                 <div id="result"></div>
             </form>
